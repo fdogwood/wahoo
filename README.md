@@ -30,6 +30,8 @@
 <b><a href="DOC.md">Docs</a></b>
 |
 <b><a href="https://github.com/bucaran/wahoo/wiki">Wiki</a></b>
+|
+<b><a href="https://github.com/bucaran/wahoo/wiki/Screencasts">Screencasts</a></b>
 
 </p>
 
@@ -82,13 +84,13 @@ Remove a theme or package. Packages listening to `uninstall` events will be call
 
 ## `new pkg|theme <name>`
 
-Create a new directory in `$WAHOO_CUSTOM/[themes|pkg]/<name>` or `$WAHOO_PATH/[themes|pkg]/<name>` if that fails and copy a starting template for the new package. The template for packages is the same as `themes/default/fish_prompt.fish`. For regular packages it's created in the fly.
+Create a new `<name>` directory under `$WAHOO_CUSTOM/[themes|pkg]/` or `$WAHOO_PATH/[themes|pkg]/` if that fails and copy a starting template for the new package. The template for packages is the same as `themes/default/fish_prompt.fish`. For regular packages it's created in the fly.
 
 ## `submit <package>`
 
 > Current directory must be under `git` source control and have a remote origin.
 
-Creates a new branch `add-<package name>` in your local fork of Wahoo and adds a new entry to the local registry under `$WAHOO_PATH/db` using the [`$PWD`](http://en.wikipedia.org/wiki/Working_directory) git remote origin. If you haven't forked Wahoo, this forks the project on GitHub and updates your local clone remote [origin](http://stackoverflow.com/questions/9529497/what-is-origin-in-git) and [upstream](http://stackoverflow.com/questions/2739376/definition-of-downstream-and-upstream).
+Create a new branch `add-<package name>` in your local fork of Wahoo and add a new entry to the local registry under `$WAHOO_PATH/db` using the [`$PWD`](http://en.wikipedia.org/wiki/Working_directory) git remote origin. If you haven't forked Wahoo, this forks the project on GitHub and updates your local clone remote [origin](http://stackoverflow.com/questions/9529497/what-is-origin-in-git) and [upstream](http://stackoverflow.com/questions/2739376/definition-of-downstream-and-upstream).
 
 Finally, the GitHub's repository is opened in your preferred browser. You can submit a PR from there.
 
