@@ -30,6 +30,8 @@
 <b><a href="DOC.md">Docs</a></b>
 |
 <b><a href="https://github.com/bucaran/wahoo/wiki">Wiki</a></b>
+|
+<b><a href="https://github.com/bucaran/wahoo/wiki/Screencasts">Screencasts</a></b>
 
 </p>
 
