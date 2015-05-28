@@ -121,3 +121,7 @@ Consult the [documentation](DOC.md) to learn how to create packages.
 [Git]: https://git-scm.com/
 
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/bucaran/wahoo/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
