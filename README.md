@@ -1,5 +1,6 @@
 > _Wahoo_: The [Fishshell][Fishshell] Framework
 
+[![][TravisLogo]][Travis]
 ![](https://img.shields.io/badge/100% -Fresh-00cc00.svg?style=flat-square)
 ![](https://img.shields.io/badge/Wahoo-Framework-00b0ff.svg?style=flat-square)
 ![](https://img.shields.io/badge/Mac-OSX-FF0066.svg?style=flat-square)
@@ -13,9 +14,11 @@
 <img width="40%" src="https://cloud.githubusercontent.com/assets/8317250/7772540/c6929db6-00d9-11e5-86bc-4f65533243e9.png">
 </a>
 </p>
+
 <br>
 
 <p align="center">
+
 <b><a href="#about">About</a></b>
 |
 <b><a href="#install">Install</a></b>
@@ -25,18 +28,19 @@
 <b><a href="#advanced">Advanced</a></b>
 |
 <b><a href="https://github.com/bucaran/wahoo/wiki/Screencasts">Screencasts</a></b>
-|
-<b><a href="#uninstall">Uninstall</a></b>
+
 </p>
 
 <br>
 
 
-# About [![Join the chat at https://gitter.im/bucaran/wahoo](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/bucaran/wahoo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# About 
+[![Join the chat at https://gitter.im/bucaran/wahoo](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/bucaran/wahoo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 _Wahoo_ is an all-purpose framework and decentralized package manager for the [fishshell][Fishshell]. It looks after your configuration and packages. It's light, fast and easy to use.
 
-# Install [![][TravisLogo]][Travis]
+# Install 
+
 > Use `sudo` if you need to install [fish][Fishshell].
 
 ```sh
@@ -44,7 +48,7 @@ curl -L git.io/wa | sh
 wa help
 ```
 
-### About `sudo`
+### `sudo`?
 
 You don't need to use `sudo` if you already have `fish` installed or use [Homebrew](http://brew.sh/), but if you are starting from scratch you need to `sudo` in order to install `fish` along with its dependencies and change the system's default shell.
 
@@ -105,9 +109,11 @@ Display version.
 
 ## `wa destroy`
 
-Uninstall _Wahoo_. See [uninstall](#uninstall) for more information.
+> Does not remove the _fishshell_ itself.
 
-To remove Wahoo, run `wa destroy`. This removes both `$HOME/.wahoo` and `$HOME/.config/wahoo`, restores you `fish` configuration in `$HOME/config/fish/config.fish` and attempts to uninstall each plugin by emitting `uninstall_<pkg>` events to subscribed packages. Packages can use this event to correctly remove their own configuration, resources, etc
+Remove _Wahoo_.
+
+This removes both `$HOME/.wahoo` and `$HOME/.config/wahoo`, restores you `fish` configuration in `$HOME/config/fish/config.fish` and attempts to uninstall each plugin by emitting `uninstall_<pkg>` events to subscribed packages. Packages can use this event to correctly remove their own configuration, resources, etc
 
 # Advanced
 
@@ -119,7 +125,6 @@ To remove Wahoo, run `wa destroy`. This removes both `$HOME/.wahoo` and `$HOME/.
   + [Directory Structure](#package-directory-structure)
   + [Initialization](#initialization)
 + [Uninstall](uninstall)
-
 
 ## Bootstrap Process
 
