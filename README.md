@@ -124,7 +124,7 @@ This removes both `$HOME/.wahoo` and `$HOME/.config/wahoo`, restores you `fish` 
   + [Submitting](#submitting)
   + [Directory Structure](#package-directory-structure)
   + [Initialization](#initialization)
-+ [Uninstall](uninstall)
++ [Uninstall](#uninstall)
 
 ## Bootstrap Process
 
